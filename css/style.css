@@ -103,6 +103,10 @@ body {
   background: transparent;
 }
 
+select.form-control:not([size]):not([multiple]) {
+  height: 55px;
+}
+
 textarea.form-control {
   height: auto;
 }
@@ -196,6 +200,23 @@ textarea.form-control {
 .order-summery .summery div {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+}
+
+.request-item {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.request-item input:first-child {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.request-item input:last-child {
+  text-align: center;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin-left: 2%;
 }
 
 .slider-bg-1 {
